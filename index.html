@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEM 01 // Academic Archive</title>
+  <meta name="description" content="Semester 1 academic paper archive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-mark">01</span>
+      <span>SEM / 01</span>
+    </a>
+    <div class="status"><span class="dot"></span> ARCHIVE ONLINE</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">ACADEMIC PAPER ARCHIVE // 2026</div>
+      <h1>Semester <span>01</span><br>Exam Archive.</h1>
+      <p class="hero-copy">A focused repository for your four Semester 1 courses — papers, exam types, years and slots in one place.</p>
+      <div class="hero-actions">
+        <a href="#subjects" class="primary-btn">Browse papers <span>→</span></a>
+        <a href="#schedule" class="ghost-btn">FAT schedule</a>
+      </div>
+    </section>
+
+    <section id="schedule" class="fat-card">
+      <div>
+        <div class="eyebrow">NEXT EXAM</div>
+        <h2>FAT 2026</h2>
+        <p id="fat-date">12 NOV 2026</p><p id="fat-subject" class="fat-subject">Manufacturing</p><p id="fat-meta" class="fat-meta">08:45 AM reporting · 09:30 AM - 12:30 PM · FN1</p>
+      </div>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">--</strong><small>DAYS</small></div>
+        <div><strong id="hours">--</strong><small>HRS</small></div>
+        <div><strong id="mins">--</strong><small>MIN</small></div>
+        <div><strong id="secs">--</strong><small>SEC</small></div>
+      </div>
+    </section>
+
+    <section id="subjects" class="section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">COURSE INDEX</div>
+          <h2>Semester 01 subjects</h2>
+        </div>
+        <span class="course-count">04 COURSES</span>
+      </div>
+      <div class="subjects" id="subjects-grid"></div>
+    </section>
+
+    <section class="section archive-section">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">PAPER FINDER</div>
+          <h2>Find a paper</h2>
+        </div>
+      </div>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search subject, code, exam..." />
+        <select id="examFilter">
+          <option value="all">All exams</option>
+          <option>FAT</option>
+          <option>CAT-1</option>
+          <option>CAT-2</option>
+        </select>
+        <select id="yearFilter">
+          <option value="all">All years</option>
+          <option>2025-2026</option>
+          <option>2024-2025</option>
+          <option>2023-2024</option>
+          <option>2022-2023</option>
+        </select>
+      </div>
+      <div id="papers" class="papers"></div>
+    </section>
+
+    <section class="source-note">
+      <span>DATA SOURCE</span>
+      <p>Paper links are connected to public paper archives. Exact current-course-code collections are used where available; older CodeChef-VIT catalogue entries are linked directly when that is the available source.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>SEM / 01 — ACADEMIC ARCHIVE</span>
+    <span>BUILT FOR STUDENTS</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
